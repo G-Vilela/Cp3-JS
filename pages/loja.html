@@ -22,3 +22,43 @@
       <a href="./sobre.html">Sobre</a>
     </nav>
   </header>
+  <main>
+
+    <section class="banner">
+      <span class="banner-badge">Checkout</span>
+      <h2>Carrinho de <span class="destaque">Compras</span></h2>
+      <p>Revise seus itens e finalize a compra.</p>
+    </section>
+
+    <section class="abaixo">
+      <h2>Itens selecionados</h2>
+    </section>
+
+    <section id="carrinho-lista">
+      <div style="margin-bottom:24px;">
+        <h2 style="font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:#DFF0FF;">Itens do carrinho</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div id="carrinho-container" class="cards-container"></div>
+    </section>
+
+    <section class="produtos">
+      <h2>Resumo</h2>
+      <div class="section-divider"></div>
+
+      <div class="resumo-box">
+        <div class="resumo-linha">
+          <span>Subtotal</span>
+          <span style="color:#DFF0FF;font-weight:600;" id="total">R$ 0,00</span>
+        </div>
+        <div class="resumo-linha">
+          <span>Frete</span>
+          <span style="color:#00D97E;">Grátis</span>
+        </div>
+
+        <div class="botoes">
+          <button class="btn-desconto" onclick="aplicarDesconto()">🏷️ Aplicar 10% OFF</button>
+          <button class="btn-finalizar" onclick="alert('Compra finalizada! Obrigado pela preferência ⚡')">Finalizar compra</button>
+        </div>
+      </div>
+    </section>
